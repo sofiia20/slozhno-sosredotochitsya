@@ -1,12 +1,51 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #ff8dcb;
+  --bc: #fff1f7;
+  --heading-color: #353430;
+  --text-color: #353430;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --bc: #fff1f7;
+    --heading-color: #353430;
+    --text-color: #353430;
+  }
+}
+
+.theme_light .header {
+  background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .cover__title {
+  color: #ffc2e6;
+}
+
+.theme_light .decoration-text,
+.theme_light .pseudo-decoration {
+  display: none;
+}
+
+.theme_light .heading {
+  color: var(--heading-color);
+}
+/* .theme_light .link {
+  color: var(--text-color);
+} */
+
+@media (width > 768px) {
+  .theme_light .cover__title {
+    color: #ffc2e6;
+    --accent-color: #ff0070;
+  }
+}
+
+.theme_light .header__theme-menu-button {
+  color: var(--text-color);
+  --accent-color: var(--text-color);
+}
+
+.theme_light ::after,
+.theme_light ::before :not(.title-decor::before) {
+  --accent-color: var(--text-color);
 }
