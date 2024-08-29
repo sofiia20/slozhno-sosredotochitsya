@@ -98,7 +98,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .decorated-zone {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
@@ -126,7 +126,7 @@
     margin-bottom: 20px;
   }
 }
-@media (375px < width < 768px) {
+@media (375px <= width <= 768px) {
   .title-descript {
     min-width: 355px;
     max-width: 364px;
@@ -197,7 +197,7 @@
   }
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .cover__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -294,7 +294,7 @@
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .pic {
     margin: 0 10px;
     display: flex;
@@ -310,7 +310,7 @@
     object-position: center;
   }
 }
-@media (width > 768px) {
+@media (width >= 768px) {
   .title-pics {
     margin: 20px;
   }
@@ -365,7 +365,7 @@
   margin-top: 40px;
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .footer {
     margin-top: 50px;
   }
@@ -418,13 +418,13 @@
   max-width: 100%;
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .section-text1 {
     display: grid;
     column-gap: 20px;
   }
 }
-@media (768px < width < 1024px) {
+@media (768px <= width < 1024px) {
   .section-text1 {
     grid-template-columns: 1fr 65%;
   }
@@ -444,7 +444,7 @@
   gap: 20px;
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .section-text1 > .text-list {
     display: grid;
     gap: 20px;
@@ -454,7 +454,7 @@
 @media (width >= 1024px) {
   .section-text2 > .text-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(314px, 1fr));
     gap: 20px;
   }
   .section-text2 > .heading {
