@@ -159,6 +159,10 @@
   text-align: center;
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--accent-color);
 }
@@ -258,6 +262,10 @@
 
 .link:hover {
   text-decoration: underline;
+}
+
+.link:focus {
+  outline: none;
 }
 
 .link:focus-visible {
