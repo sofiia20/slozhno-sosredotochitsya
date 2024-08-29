@@ -133,7 +133,7 @@
     margin-bottom: 20px;
   }
 }
-@media (768px < width < 1024px) {
+@media (768px <= width < 1024px) {
   .title-descript {
     min-width: 364px;
     max-width: 41vw;
