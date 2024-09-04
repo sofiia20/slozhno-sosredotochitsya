@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сложно сосредоточиться</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
@@ -16,13 +16,10 @@
     <link rel="mobile-icon" href="./images/mobile-icon.png" />
     <meta name="color-scheme" content="dark light" />
   </head>
-  <body class="page theme_light">
-    <header class="header">
+  <body class="page">
+    <header class="header decor">
       <div class="decorated-zone">
-        <div class="decoration-element">
-          <span aria-hidden="true" class="decoration-text">REC</span>
-          <span class="pseudo-decoration"></span>
-        </div>
+        <div class="decoration-element"></div>
         <nav class="header__theme-menu">
           <ul class="header__theme-menu-list">
             <li class="header__theme-menu-item">
@@ -51,18 +48,18 @@
         </nav>
       </div>
       <h1 class="cover__title">no focus</h1>
-      <p class="title-descript title-decor">
+      <p class="title-descript title-decor title">
         Что делать, когда не можешь делать ничего
         <br />Или почему нам так сложно сконцентрироваться, особенно когда очень
         надо
       </p>
     </header>
     <main class="main">
-      <section class="section-text1">
+      <section class="content-section">
         <h2 class="heading">Почему сосредоточиться так сложно</h2>
         <ul class="text-list">
           <li>
-            <h3 class="title-decor">Многозадачность</h3>
+            <h3 class="title-decor title">Многозадачность</h3>
             <p class="description">
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
@@ -81,7 +78,7 @@
             </p>
           </li>
           <li>
-            <h3 class="title-decor">Дофамин</h3>
+            <h3 class="title-decor title">Дофамин</h3>
             <p class="description">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
               нашей невозможности сосредоточиться замешана и полная
@@ -95,11 +92,11 @@
           </li>
         </ul>
       </section>
-      <section class="section-text2">
+      <section class="why-section">
         <h2 class="heading">Что снижает концентрацию внимания?</h2>
         <ul class="text-list">
           <li>
-            <h3 class="title-decor">Многозадачность</h3>
+            <h3 class="title-decor title">Многозадачность</h3>
             <p class="description">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -110,7 +107,7 @@
             </p>
           </li>
           <li>
-            <h3 class="title-decor">Еда</h3>
+            <h3 class="title-decor title">Еда</h3>
             <p class="description">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
               доставляют в мозг энергию и помогают ему лучше работать. Но уходит
@@ -121,7 +118,7 @@
             </p>
           </li>
           <li>
-            <h3 class="title-decor">Гаджеты</h3>
+            <h3 class="title-decor title">Гаджеты</h3>
             <p class="description">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -134,17 +131,19 @@
           </li>
         </ul>
       </section>
-      <section class="section-text1">
+      <section class="content-section">
         <h2 class="heading">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
         <ul class="text-list">
           <li>
-            <h3 class="title-decor">
+            <h3 class="title-decor title">
               5 простых (на самом деле не очень) советов
             </h3>
-            <h4 class="title-decor subtitle">Представьте небо и облака</h4>
+            <h4 class="title-decor title subtitle">
+              Представьте небо и облака
+            </h4>
             <p class="description">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -157,7 +156,7 @@
             </p>
           </li>
           <li>
-            <h4 class="title-decor subtitle">Включите музыку</h4>
+            <h4 class="title-decor title subtitle">Включите музыку</h4>
             <p class="description">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -166,7 +165,7 @@
             </p>
           </li>
           <li>
-            <h4 class="title-decor subtitle">Прогуляйтесь</h4>
+            <h4 class="title-decor title subtitle">Прогуляйтесь</h4>
             <p class="description">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               <a
@@ -182,7 +181,7 @@
             </p>
           </li>
           <li>
-            <h4 class="title-decor subtitle">Хорошо ешьте</h4>
+            <h4 class="title-decor title subtitle">Хорошо ешьте</h4>
             <p class="description">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
@@ -191,7 +190,7 @@
             </p>
           </li>
           <li>
-            <h4 class="title-decor subtitle">Читайте</h4>
+            <h4 class="title-decor title">Читайте</h4>
             <p class="description">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -201,9 +200,7 @@
           </li>
         </ul>
       </section>
-    </main>
-    <section>
-      <h3 class="title-decor title-pics">А можно в картинках?</h3>
+      <h2 class="title-decor title">А можно в картинках?</h2>
       <ul class="pic">
         <li>
           <img
@@ -246,9 +243,9 @@
           />
         </li>
       </ul>
-    </section>
-    <footer class="footer">
-      <h5 class="cover__title title-footer">focus</h5>
+    </main>
+    <footer class="footer decor">
+      <h2 class="cover__title title-footer">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>

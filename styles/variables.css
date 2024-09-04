@@ -9,4 +9,8 @@
   --text-color: #F1B2CE;
   --fs: 18px;
   --font: 'IBM Plex mono';
+  --bi: url(../images/cover-image-dark.png);
+  --accent-color-button: rgba(255, 0, 112, 1);
+  --accent-color-button-hover: #FF007066;
+  --title-color: #db00ff;
 }
