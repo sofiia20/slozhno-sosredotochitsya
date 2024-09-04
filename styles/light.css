@@ -9,6 +9,7 @@
   --accent-color-button: #353430;
   --accent-color-button-hover: #32312D66;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
@@ -22,12 +23,12 @@
   }
 }
 
-.theme_light .decoration-element { 
-  visibility: hidden;
-}
-
 .theme_light .heading {
   color: var(--heading-color);
+}
+
+.theme_light .decoration-element { 
+  visibility: hidden;
 }
 
 @media (width >= 768px) {

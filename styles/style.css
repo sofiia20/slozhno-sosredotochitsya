@@ -177,7 +177,7 @@
   outline: 1px solid var(--accent-color-button-hover);
 }
 
-.header__theme-menu-button_active{
+.header__theme-menu-button_active {
   outline: 1px solid var(--accent-color-button);
   pointer-events: none;
 }
