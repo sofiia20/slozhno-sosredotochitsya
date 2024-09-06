@@ -1,14 +1,22 @@
-
-
-:root.theme_dark {
-  --accent-color: rgba(255, 0, 112, 1);
+.page.theme_dark {
+  --accent-color: #ff0070;
   --bc: #000028;
   --heading-color: #000028;
   --text-color: #f1b2ce;
-  --accent-color-button: rgba(255, 0, 112, 1);
+  --accent-color-button: #ff0070;
   --bi: url(../images/cover-image-dark.png);
-  --accent-color-button: rgba(255, 0, 112, 1);
-  --accent-color-button-hover: #FF007066;
+  --accent-color-button-hover: #ff007066;
   --title-color: #db00ff;
+  --section-title-color: #ff0070;
+  --decor-color: #ff0070;
+  --shadow: #ff0070;
 }
 
+@media (prefers-color-scheme: dark) {
+  .decoration-element {
+    visibility: visible;
+  }
+}
+.theme_dark .decoration-element {
+  visibility: visible;
+}

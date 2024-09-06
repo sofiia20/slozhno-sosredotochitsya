@@ -7,7 +7,8 @@
   --title-color: #ffc2e6;
   --shadow: #ff0070;
   --accent-color-button: #353430;
-  --accent-color-button-hover: #32312D66;
+  --accent-color-button-hover: #32312d66;
+  --section-title-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -19,30 +20,16 @@
     --bi: url(../images/cover-image-light.png);
     --title-color: #ffc2e6;
     --accent-color-button: #353430;
-    --accent-color-button-hover: #32312D66;
+    --accent-color-button-hover: #32312d66;
+    --shadow: #ff0070;
+    --section-title-color: #353430;
+    --decor-color: #353430;
+  }
+  .decoration-element {
+    visibility: hidden;
   }
 }
 
-.theme_light .heading {
-  color: var(--heading-color);
-}
-
-.theme_light .decoration-element { 
+.theme_light .decoration-element {
   visibility: hidden;
-}
-
-@media (width >= 768px) {
-  .theme_light .cover__title {
-    color: var(--title-color);
-    text-shadow: 4px 4px 0 var(--shadow);
-  }
-}
-
-.theme_light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.theme_light ::after,
-.theme_light ::before :not(.title-decor::before) {
-  --accent-color: var(--text-color);
 }

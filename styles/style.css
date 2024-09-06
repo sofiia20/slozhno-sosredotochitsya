@@ -1,13 +1,11 @@
 .page {
   background-color: var(--bc);
-  max-width: 100vw;
   width: 100%;
   margin: 0px auto;
   background-image: var(--bi);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  
 }
 
 .decorated-zone {
@@ -17,7 +15,7 @@
 }
 
 .decoration-element {
-  margin: 0px 9px;
+  margin: 0px 5px;
 }
 
 .decoration-element::before {
@@ -53,8 +51,8 @@
   height: 25px;
   width: 25px;
   background-color: transparent;
-  border-right: 1px solid var(--accent-color);
-  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--decor-color);
+  border-top: 1px solid var(--decor-color);
   top: 10px;
   right: 10px;
 }
@@ -78,8 +76,8 @@
   font-weight: 700;
   line-height: 130%;
   color: var(--heading-color);
-  margin-block-end: 5px;
 }
+
 @media (width >= 768px) {
   .header {
     padding: 20px 20px 20px 0;
@@ -88,16 +86,16 @@
     margin-block-end: 20px;
   }
 }
+
 .header__theme-menu {
   justify-self: center;
   align-content: space-between;
   align-self: center;
+  padding: 0 0 10px 0;
 }
 
 .header__theme-menu-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
   gap: 15px;
   display: flex;
   flex-direction: column;
@@ -117,7 +115,8 @@
     grid-column: 2;
     grid-row: 1;
     align-self: flex-start;
-    margin-inline-start: 23px;
+    margin-inline-start: 20px;
+    padding-top: 2px;
   }
   .header__theme-menu-list {
     flex-direction: row;
@@ -133,7 +132,6 @@
 }
 @media (375px <= width < 768px) {
   .title-descript {
-    min-width: 355px;
     max-width: 364px;
     margin-bottom: 20px;
   }
@@ -154,7 +152,7 @@
   }
 }
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--section-title-color);
   font-family: var(--font), monospace, sans-serif;
   background-color: transparent;
   border: none;
@@ -201,12 +199,6 @@
   }
 }
 
-@media (width < 768px) {
-  .cover__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-}
-
 .decor::before {
   content: "";
   position: absolute;
@@ -215,8 +207,8 @@
   height: 25px;
   width: 25px;
   background-color: transparent;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--decor-color);
+  border-bottom: 1px solid var(--decor-color);
   left: 10px;
   bottom: 10px;
 }
@@ -226,7 +218,7 @@
   align-self: center;
 }
 .heading {
-  color: var(--accent-color);
+  color: var(--section-title-color);
   font-family: var(--font), monospace, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -266,7 +258,8 @@
 .subtitle {
   font-weight: 400;
 }
-.title-decor + .subtitle {
+
+.subtext {
   margin-top: 20px;
 }
 
@@ -289,19 +282,23 @@
     gap: 6px;
     align-items: stretch;
     align-content: center;
+    margin-block-start: 6px;
   }
   .image {
     object-fit: fill;
     object-position: center;
   }
 }
- @media (width >= 768px) {
-
+@media (width >= 768px) {
+  .image {
+    display: block;
+  }
   .pic {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
     gap: 20px;
+    margin-block-start: 20px;
   }
   .pic > li:nth-child(1) {
     grid-column: 1 / span 2;
@@ -334,7 +331,8 @@
 }
 
 .footer {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   display: grid;
   position: relative;
 }
@@ -342,17 +340,29 @@
 .title-footer {
   justify-self: center;
   align-self: center;
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+@media (width >= 768px) {
+  .cover__title {
+    text-shadow: 4px 4px 0 var(--shadow);
+  }
+  .title-footer {
+    text-shadow: 2px 2px 0px var(--shadow);
+  }
 }
 
 .main {
   display: grid;
   margin: 40px 10px;
 }
+
 @media (width >= 768px) {
   .main {
     margin: 60px 20px;
   }
 }
+
 .content-section {
   max-width: 100%;
 }
@@ -385,7 +395,6 @@
 @media (width >= 768px) {
   .content-section > .text-list {
     display: grid;
-    gap: 20px;
   }
 
   .text-list {
@@ -397,7 +406,6 @@
   .why-section > .text-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(314px, 1fr));
-    gap: 20px;
   }
   .why-section > .heading {
     max-width: 315px;
