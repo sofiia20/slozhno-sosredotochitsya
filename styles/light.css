@@ -9,6 +9,7 @@
   --accent-color-button: #353430;
   --accent-color-button-hover: #32312d66;
   --section-title-color: #353430;
+  --decor-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
